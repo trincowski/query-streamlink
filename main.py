@@ -10,7 +10,7 @@ app = Flask(__name__)
 limiter = Limiter(
     app,
     key_func=get_remote_address,
-    default_limits=["100 per hour"],
+    default_limits=["120 per hour"],
     storage_uri="memory://",
 )
 
@@ -44,8 +44,8 @@ def index():
 # iptv-query route -> gives link to Streamlink, link is analyzed
 # for correct plugin routing, and redirects (or shows) to the stream link.
 @app.route("/iptv-query", methods=['GET'])
-@limiter.limit("20/minute")
-@limiter.limit("1/second")
+@limiter.limit("120/minute")
+@limiter.limit("10/second")
 def home():
     response = query_handler(request.args)
     valid2 = validators.url(response)

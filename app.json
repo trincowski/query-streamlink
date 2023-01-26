@@ -1,6 +1,6 @@
 {
    "name":"Query Streamlink",
-   "description":"A Python webapp that is destined to spit out links given by all sources supported by Streamlink. ",
-   "repository":"https://github.com/LaneSh4d0w/query-streamlink",
+   "description":"A Python webapp that is designed to redirect the end user to the stream they want, backed up by Streamlink. ",
+   "repository":"https://github.com/trincowski/query-streamlink",
    "logo":"https://streamlink.github.io/_static/icon.svg"
 }
