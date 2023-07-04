@@ -19,7 +19,7 @@ query-streamlink simply acts like an intermediary/redirector between the end-use
 
 ## Wait... is that legal ?
 
-Yes, this program is legal, since it is designed as a bridge for [Streamlink](https://github.com/streamlink/streamlink), the only illegal thing you might do with it is hijacking the main program for malicious causes.
+Yes, this program is legal, since it is designed as a bridge for [Streamlink](https://github.com/streamlink/streamlink), the only illegal thing you might do with it is hijacking the main program for malicious causes, in this case I won't be held responsible.
 
 ### Supported websites
 
@@ -49,9 +49,6 @@ For the other kinds, see if they have specific configurations, but a simple fork
 
 - The Streamlink members and contributors for this amazing tool that is.
 
-## Available websites (as of 15/08/2022)
+## Available websites (as of 30/05/2023)
 
-Here are the actual recensed websites that uses query-streamlink on the Internet :
-
-[FullSpeed - DCT EU (dct-infra)](http://free.fullspeed.tv/)
-... as well as all the other forks available on GitHub !
+There's lots of forks of query-streamlink out in the wild to play with !
