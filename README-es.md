@@ -27,6 +27,7 @@ Básicamente cualquier sitio web que soporte [Streamlink](https://streamlink.git
 - `url` (obligatorio): La URL del stream al que necesita el enlace.
 - `no_redirect` (opcional, valor : null) : Si no necesites ser redirigido en el sitio.
 - `quality` (opcional, valor : best) : Si necesitas poner un parametro de calidad.
+- `proxy` (opcional, valor: None): Si necesitas acceder a una lista de reproducción que está restringida geográficamente. Ten en cuenta que esto solo afectará *la forma de acceder al playlist*.
 
 ## Despliegue local
 

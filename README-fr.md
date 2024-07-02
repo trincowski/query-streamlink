@@ -26,6 +26,7 @@ query-streamlink supporte une large gamme de sites web, compatibles avec [Stream
 - `streaming-ip` (obligatoire) : L'URL du flux pour lequel vous avez besoin d'un lien.
 - `no_redirect` (optionnel, par défaut : null) : Si vous ne nécessitez pas de redirection vers le site.
 - `quality` (optionnel, par défaut : best) : Si vous avez besoin d'un paramètre de qualité.
+- `proxy` (optionnel, par défaut : None) : Si vous avez besoin d'accéder à une playlist qui est restreinte géographiquement. Veuillez noter que cela *n'affectera uniquement que la manière d'accéder à la playlist*.
 
 ## Déploiement local
 

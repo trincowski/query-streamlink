@@ -26,6 +26,7 @@ query-streamlink supports a wide range of websites compatible with [Streamlink](
 - `url` (required): The URL of the stream for which you need the link.
 - `no_redirect` (optional, default : null) : If you do not need to be redirected into the website stream.
 - `quality` (optional, default : best) : If you need a specific quality setting.
+- `proxy` (optional, default: None) : If you need to access a playlist that is geo-restricted. Please note that this will affect the *way of accessing the playlist only*.
 
 ## Local Deployment
 

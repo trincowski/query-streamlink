@@ -22,15 +22,16 @@ def query_handler(args):
     streaming_ip = args.get("url")
     provider = args.get("provider")
     quality = args.get("quality")
+    proxy = args.get("proxy")  # Get the proxy parameter
     if not streaming_ip:
         return "You didn't provide any URL."
     if not quality:
         quality = "best"
     if validators.url(streaming_ip):
         if provider:
-            return get_streams(streaming_ip + "&provider=" + provider, quality)
+            return get_streams(streaming_ip + "&provider=" + provider, quality, proxy)
         else:
-            return get_streams(streaming_ip, quality)
+            return get_streams(streaming_ip, quality, proxy)
     else:
         return "The URL you entered is not valid."
 
@@ -42,7 +43,7 @@ def index():
             This program allows you to access streams directly using Streamlink.
             To process a link, append '/iptv-query?streaming-ip=*your URL*' to this webpage.
             Please note that it only works with Streamlink-supported websites.
-            Enjoy! LaneSh4d0w. Special thanks to Keystroke for the API usage.
+            Enjoy! BellezaEmporium. Special thanks to Keystroke for the API usage.
            """
 
 # iptv-query route -> provides a link to Streamlink, analyzes the link

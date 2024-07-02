@@ -2,9 +2,17 @@ import streamlink
 from streamlink import NoPluginError, PluginError
 from streamlink.stream import DASHStream
 import urllib.request
+from urllib.request import ProxyHandler, build_opener, install_opener
 
-def get_streams(query, quality="best"):
+
+def get_streams(query, quality="best", proxy=None):
     try:
+        # Configure proxy if provided
+        if proxy:
+            proxy_handler = ProxyHandler({'http': proxy, 'https': proxy})
+            opener = build_opener(proxy_handler)
+            install_opener(opener)
+
         streams = streamlink.streams(query)
         if not streams:
             return "No streams found."

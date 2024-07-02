@@ -24,6 +24,7 @@ Temel olarak [Streamlink](https://streamlink.github.io/plugin_matrix.html) taraf
 - `url` (zorunlu): Bağlantıya ihtiyacınız olan akışın URL'si.
 - `no_redirect` (isteğe bağlı, değer : null) : Sitede yönlendirilmeye ihtiyacınız yoksa.
 - `quality` (isteğe bağlı, değer : best) : Bir kalite parametresi ayarlamanız gerekiyorsa.
+- `proxy` (isteğe bağlı, değer: None) : Coğrafi olarak kısıtlanmış bir çalma listesine erişmeniz gerekiyorsa. Bunun yalnızca *çalma listesine erişim şeklinizi etkileyeceğini unutmayın*.
 
 ## Program yerel olarak nasıl yüklenir :
 
